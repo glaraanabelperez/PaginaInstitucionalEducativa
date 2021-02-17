@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="syle-proyecto.css">
+    <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+	<title>Escuela</title>
+	<meta name="description" content="El mejor jardín para tus hijos" />
+</head>
+
+<body>
+    <div>INSTITUCIONAL > PROYECTO EDUCATIVO</div>
+    <h4 class="base">
+        <header>
+            <div class="contenedor">
+                <div class="logo"><img src="imagenes/logo.jpg" alt="logo"> </div>
+                <div id="botonera" class="">
+                        <h4 class="animated bounceInDown">JARDIN DE INFANTES Y ESCUELA PRIMARIA</h4 class="animated bounceInLeft">
+                        <h1>Una frase para  el proyecto educativo</h1>
+                        <ul class="botones">
+                            <li onclick="ocultarBotoneraInstitucional()"><div id="btnPrincipal" class="btnInstitucional"> INSTITUCIONAL</div> <i id="colorFa" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                            <li onclick="ocultarBotoneraJardin()"><div id="btnPrincipal"class="btnJardin"> JARDIN</div><i id="colorFa1" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                            <li onclick="ocultarBotoneraPrimaria()"><div id="btnPrincipal"class="btnPrimaria">PRIMARIA</div><i id="colorFa2" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                            <a href="contactenos.html"> <li><div id="btnPrincipal"class="btnContactenos"> CONTACTENOS</div> <i id="colorFa3" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li></a>
+                        </ul>
+                </div>
+                <div class="web">
+                    <button><a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></button>
+                    <button><a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></button>
+                    <button><a href=""><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></button>
+                    <button><a href=""><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></button>
+                    <button><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></button>
+                    <button onclick="mostrarLateral()"><a><i class="fa fa-bars fa-2x ocultar" aria-hidden="true"></i></a></button>
+                </div>
+
+
+
+                <div id="botonera-lateral" class="">
+                    <ul class="botones-laterales">
+                        <li onclick="ocultarBotoneraInstitucional2()"><div id="btnPrincipal" class="btnInstitucional"> INSTITUCIONAL</div> <i id="colorFa" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                        <div id="institucional2" class="">
+                            <ul class="secundaria2">
+                                <a href="proyectoEducativo.html"><li>PROYECTO EDUCATIVO</li></a>
+                                <li>  DIRECTIVOS</li>
+                                <li>  ORGANIZACION ESCOLAR</li>
+                                <li>  COMEDOR</li>
+                                <li>  PUBLICACIONES</li>
+                            </ul>
+                        </div>
+                        <li onclick="ocultarBotoneraSecundaria()"><div id="btnPrincipal"class="btnJardin"> JARDIN</div><i id="colorFa1" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                        <li onclick="ocultarBotoneraSecundaria()"><div id="btnPrincipal"class="btnPrimaria">PRIMARIA</div><i id="colorFa2" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                        <li onclick="ocultarBotoneraSecundaria()"><div id="btnPrincipal"class="btnContactenos"> CONTACTENOS</div> <i id="colorFa3" class="fa fa-caret-down fa-2x" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </header>
+
+        <hr class="lineaamarilla">
+        <div id="institucional" class="">
+            <ul class="secundaria">
+                <a href="proyectoEducativo.html"><li>PROYECTO EDUCATIVO</li></a>
+                <a href="#"><li>DIRECTIVOS</li></a>
+                <a href="#"><li>ORGANIZACION ESCOLAR</li></a>
+                <a href="#"><li>COMEDOR</li></a>
+                <a href="#"><li>PUBLICACIONES</li></a>
+                <i id="colorFa" class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+            </ul>
+        </div>
+        <div id="jardin-oculto" class="">
+            <ul class="secundaria">
+                <a href="#"><li>PROPUESTA PEDAGOGICA "JARDIN"</li></a>
+                <a href="#"><li>DIRECTIVOS 'JARDIN'</li></a>
+                <a href="#"><li>NUESTRO ESPACIO</li></a>
+                <a href="#"><li>NORMAS DE CONVIVENCIA</li></a>
+                <i id="colorFa1" class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+            </ul>
+        </div>
+        <div id="primaria-oculto" class="">
+            <ul class="secundaria">
+                <a href="proyectoEducativo.html"><li>PRPUESTA PEDAGOGICA "PRIMARIA"</li></a>
+                <a href="#"><li>DIRECTIVOS "PRIMARIA"</li></a>
+                <a href="#"><li>NUESTRO ESPACIO</li></a>
+                <a href="#"><li>CONVIVENCIA "PRIMARIA"</li></a>
+                <i id="colorFa2" class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+            </ul>
+        </div>
+
+        <main class="historia">
+            <div class="imagen-proyecto">
+                <div class="cuerpo2">
+                    <h6>PROYECTO INSTITUCIONAL</h6>
+                    <h2>Proyecto Educativo Institucional</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod dolore dignissimos quis impedit blanditiis fuga odio. Consectetur labore ut vero facere? Voluptatibus quisquam facere vero incidunt distinctio ratione, obcaecati assumenda repellendus! Minus nostrum corrupti laborum provident, odit dolor consequuntur.</p>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="footer-cont">
+            <div class="footer-div"> 
+                    <h6>NUESTROS DATOS</h6>
+                    <p class="pfooter">
+                    ESCUELA NOMBRE /A5637
+                    <br>direccion 456 BsAs Argentina
+                    <br>telefono 46758 9864 / 54648-74847 /84774 477483 
+                    <br>email: lagv er@,njfnjkf.com
+                    </p>
+                    <h6>UBICACION</h6>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.009905683899!2d-58.50336670291679!3d-34.60391102459077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62e6a171cdb%3A0x9424369a5b4abf7b!2sEmilio%20Lamarca%203136%2C%20C1417ALV%20CABA!5e0!3m2!1ses-419!2sar!4v1576671359053!5m2!1ses-419!2sar" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    <p class="pfooter">Estamos en el barrio de devoto.
+                        <br>calle pondhdvs 7565
+                    </p>
+            </div>
+            <div class="input">
+                <label for="email"> YOUR EMAIL : </label>
+                <input type="email" id="email" name="email" size="60" height="20">
+            </div>
+        </div>
+            <p>2019/ WEB DESIGNE HOY! AGENCIA</p>
+        </footer>
+    </div>
+
+    <script src="js.js"></script>
+    <script src="wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script>
+            new TypeIt('.writer', {
+          strings: "otra frase para Una frase para pensar"
+        }).go(); 
+        </script>
+
+</body>
+
+
+
+

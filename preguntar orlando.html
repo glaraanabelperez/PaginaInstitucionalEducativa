@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .botones-slider {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        }
+        .next{
+            justify-content: center;
+            cursor:pointer;
+            margin: auto;
+        }
+        .prev{
+            justify-content: center;
+            cursor:pointer;
+            margin: auto;
+        }
+        .contenedor-slider{
+            background-color: blue;
+            width: 100vw;
+            height: 100px;
+            margin: auto;
+        }
+        .slide-1{
+            background-image: url("imagenes/slider/slider1.jpg");
+            background-size: auto;
+        }
+        .slide-2{
+            background-image: url("imagenes/slider/slider2.jpg");
+            background-size: auto;
+        }
+        .slide-3{
+            background-image: url("imagenes/slider/slider3.jpg");
+            background-size: auto;
+        }
+        .slide-4{
+            background-image: url("imagenes/slider/slider4.jpg");
+            background-size: auto;
+        }
+    </style>
+
+
+    
+    <section class="contenedor-slider">
+contenedor 
+        <div id="caja-slider" class="slide-4"></div>
+        <div class="botones-slider">
+        <a class="prev" onmouseover="funcionsliderprox()">proximo</a>
+        <a class="next" onclick="funcionsliderant()">anterior</a>
+        </div>
+
+
+    </section>
+
+    <section class="contacto">
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script>
+        function funcionsliderprox(){
+            var i;
+            var slider= document.getElementById("caja-slider");
+            var vector=["slide-1", "slide-2", "slide-3", "slide-4"];
+
+            for( i=0;i<vector.lenght;i++){
+            slider=vector[i];
+            }}
+
+            function funcionsliderant(){
+            var i;
+            var slider= document.getElementById("caja-slider");
+            var vector=["slide-1", "slide-2", "slide-3", "slide-4"];
+
+            for( i=3;i>vector.lenght){
+            slider=vector[i-1];
+            }}
+    
+    </script>
+</body>
+</html>
+
